@@ -80,6 +80,13 @@ install_docker() {
 # ------------------------------------------------------------------------------
 install_docker() {
   echo "Installing Docker"
+  sudo apt update
+}
+# ------------------------------------------------------------------------------
+# Installs the Docker 
+# ------------------------------------------------------------------------------
+install_docker() {
+  echo "Installing Docker"
   sudo apt install -y --no-install-recommends \
     docker-ce \
     cgroupfs-mount
